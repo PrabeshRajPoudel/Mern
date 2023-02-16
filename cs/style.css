@@ -1,0 +1,36 @@
+body {
+    background-color: blueviolet;
+}
+
+img {
+    width="75"
+}
+
+dt {
+    display: inline;
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin: 15px;
+    margin-left: 0;
+}
+
+.active {
+    font-weight: bold;
+    color: red;
+}
+
+.underline {
+    text-decoration: underline;
+}
