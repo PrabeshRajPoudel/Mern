@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class="dark">
+    <!-- <button id="darkbutton">dark theme</button>
+    <button id="lightbutton">light theme</button> -->
+    <button id="toggletheme">light</button>
+
+    <style>
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+        
+        .dark #darkbutton {
+            display: none;
+        }
+        
+        #lightbutton {
+            display: none;
+        }
+        
+        .dark #lightbutton {
+            display: initial;
+        }
+    </style>
+
+
+
+    <script>
+        // console.log(document.getElementById("darkbutton"));
+        // document.getElementById("darkbutton").addEventListener("click", () => {
+        //     document.getElementsByTagName("body")[0].classList.add("dark")
+        // })
+        // document.getElementById("lightbutton").addEventListener("click", () => {
+        //     document.getElementsByTagName("body")[0].classList.remove("dark")
+        // })
+
+
+
+        let defult = "dark"
+        document.getElementById("toggletheme").addEventListener("click", () => {
+            document.getElementsByTagName("body")[0].classList.toggle("dark")
+            if (defult != "dark") {
+                defult = "dark"
+            } else {
+
+                defult = "light"
+            }
+            document.getElementById("toggletheme").innerText = defult
+        })
+    </script>
